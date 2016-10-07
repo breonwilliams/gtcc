@@ -1,0 +1,2 @@
+# gtcc
+GTCC Wordpress Theme
