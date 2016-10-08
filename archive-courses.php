@@ -1,18 +1,18 @@
-<?php 
+<?php
 /**
  * Displaying archive page (category, tag, archives post, author's post)
- * 
+ *
  * @package bootstrap-basic
  */
 
-get_header(); 
+get_header();
 
 /**
  * determine main column size from actived sidebar
  */
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?> 
-<?php get_sidebar('left'); ?> 
+<?php get_sidebar('left'); ?>
 				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
 						<div class="table-responsive">
@@ -54,5 +54,5 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						<?php bootstrapBasicPagination(); ?>
 					</main>
 				</div>
-<?php get_sidebar('right'); ?> 
+<?php get_sidebar('right'); ?>
 <?php get_footer(); ?> 
