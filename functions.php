@@ -160,6 +160,20 @@ if (!function_exists('bootstrapBasicWidgetsInit')) {
 }
 add_action('widgets_init', 'bootstrapBasicWidgetsInit');
 
+// List Hierarchical Custom Taxonomy Terms for a Post in an Unordered List
+
+function list_hierarchical_terms() {
+	global $post;
+	$taxonomy = 'course_category'; // change this to your taxonomy
+	$terms = wp_get_post_terms( $post->ID, $taxonomy, array( "fields" => "ids" ) );
+	if( $terms ) {
+		echo '<?ul>';
+		$terms = trim( implode( ',', (array) $terms ), ' ,' );
+		wp_list_categories( 'title_li=&taxonomy=' . $taxonomy . '&include=' . $terms );
+		echo '<?/ul>';
+	}
+}
+
 
 if (!function_exists('bootstrapBasicEnqueueScripts')) {
 	/**
