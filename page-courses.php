@@ -17,7 +17,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
 					<main id="main" class="site-main padtop-40" role="main">
 						<div class="table-responsive">
-							<table class="table">
+							<table class="table table-1 table-striped">
 								<thead>
 								<tr>
 									<th>Course Name</th>

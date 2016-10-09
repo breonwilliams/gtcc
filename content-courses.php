@@ -1,9 +1,9 @@
 <tr>
-	<th scope="row">
+	<td scope="row">
 		<a href="<?php the_permalink(); ?>">
 			<?php the_title(); ?>
 		</a>
-	</th>
+	</td>
 	<td>
 		<?php list_hierarchical_terms(); ?>
 	</td>

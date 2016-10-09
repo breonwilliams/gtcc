@@ -251,11 +251,11 @@ h6 {
 	text-align: center;
 }
 
-header a {
+header .header-top-area a, header .header-mid-area a {
 	color: #fff;
 }
 
-header a:hover {
+header .header-top-area a:hover, header .header-mid-area a:hover {
 	color: #90ba92;
 }
 
@@ -1193,8 +1193,8 @@ Button
 
 .btn-green {
 	color: #fff;
-	background-color: #5db65b;
-	border-color: #5db65b;
+	background-color: #5dc269;
+	border-color: #5dc269;
 }
 
 .btn-green:focus,
@@ -1283,9 +1283,9 @@ Button
 }
 
 .btn-yellow {
-	color: #fff;
-	background: #d3aa2e;
-	border-color: #d3aa2e;
+	color: #6d5b1c;
+	background: #fec428;
+	border-color: #fec428;
 }
 
 .btn-yellow:focus,
@@ -1301,7 +1301,7 @@ Button
 }
 
 .btn-yellow.btn-bordered{
-	color: #d3aa2e;
+	color: #fec428;
 	background:none;
 	box-shadow: none;
 }
@@ -2248,6 +2248,12 @@ img.rounded, .rounded {
 		position: relative;
 		min-height: 330px;
 	}
+
+	.blog .entry.post.search {
+		padding-left: 0;
+		position: relative;
+		min-height: auto;
+	}
 }
 .blog .entry {
 	border-bottom: 2px solid #f2f2f2;
@@ -2263,6 +2269,10 @@ img.rounded, .rounded {
 @media only screen and (min-width: 767px) {
 	.blog .entry.has-post-thumbnail {
 		padding-right: 170px;
+	}
+
+	.blog .entry.has-post-thumbnail.search {
+		padding-right: 0;
 	}
 }
 @media only screen and (min-width: 1023px) {
@@ -2974,12 +2984,12 @@ Full Width Sections
 }
 
 .section-green {
-	background-color: #5DB65B;
+	background-color: #5dc269;
 	color: #fff;
 }
 
 .section-yellow {
-	background-color: #D3AA2E;
+	background-color: #fec428;
 }
 .section-large {
 	padding: 70px 0;
@@ -3198,11 +3208,11 @@ Progress Bars
 }
 
 .progress-bar-yellow {
-	background: #D3AA2E;
+	background: #fec428;
 }
 
 .progress-bar-green {
-	background: #5DB65B;
+	background: #5dc269;
 }
 
 .progress .progress-bar {

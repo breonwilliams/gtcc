@@ -19,7 +19,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 
 							<h1><?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; ?></h1>
 						<div class="table-responsive">
-							<table class="table">
+							<table class="table table-1 table-striped">
 								<thead>
 								<tr>
 									<th>Course Name</th>
