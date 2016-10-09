@@ -251,6 +251,14 @@ h6 {
 	text-align: center;
 }
 
+header a {
+	color: #fff;
+}
+
+header a:hover {
+	color: #90ba92;
+}
+
 .title-medium {
 	font-family: "Montserrat",sans-serif;
 	font-size: 23px;
@@ -564,7 +572,8 @@ Header
 
 .header-mid-area {
 	padding: 15px 0;
-	background: #0b0b0b;
+	background: #272727;
+	color: #cecece;
 }
 
 .header-mid-area .logo img {
@@ -572,8 +581,9 @@ Header
 }
 
 .header-top-area{
-	background-color: #252525;
-	line-height: 38px;color: #d5d5d5;
+	background-color: #2f2f2f;
+	line-height: 38px;
+	color: #dddddd;
 	font-size: 14px;
 }
 .header-top-left{}
@@ -634,7 +644,7 @@ Navigation
 .navbar {
 	border: none;
 	border-radius: 0;
-	background: #0b0b0b;
+	background: rgb(0, 103, 71);
 	z-index: 999;
 	width: 100%;
 	margin-bottom: 0;
@@ -776,6 +786,7 @@ nav.affix {
 	border: none;
 	background: rgb(0, 103, 71);
 	cursor: pointer;
+	color: #90ba92!important;
 }
 
 .navbar-nav > li > a {
@@ -1138,8 +1149,8 @@ Button
 
 .btn-default {
 	color: #fff;
-	background: #0b0b0b;
-	border-color: #0b0b0b;
+	background: #3f3f3f;
+	border-color: #3f3f3f;
 }
 
 .btn-default.btn-bordered{
@@ -1244,8 +1255,8 @@ Button
 .btn-red,
 .navbar-collapse form[role="search"] button[type="reset"] {
 	color: #fff;
-	background: rgb(0, 103, 71);
-	border-color: rgb(0, 103, 71);
+	background: #90ba92;
+	border-color: #90ba92;
 }
 
 .navbar-collapse form[role="search"] button[type="submit"] {
@@ -1662,7 +1673,7 @@ Tables
 }
 
 .table-1 th {
-	background-color: #000;
+	background-color: #272727;
 	color:#fff;
 	border-bottom:none;
 }
@@ -3364,7 +3375,7 @@ Footer
 
 .footer-section a:hover,
 .header-mid-area a:hover {
-	color: #fff;
+	color: #90ba92;
 }
 
 .footer-social a:hover i.fa,
