@@ -24,7 +24,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 								<tr>
 									<th>Course Name</th>
 									<th>Course Category</th>
-									<th>Course Instructor</th>
+									<th>Instructor</th>
 									<th>Course Number</th>
 								</tr>
 								</thead>
