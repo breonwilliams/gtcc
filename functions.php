@@ -167,10 +167,10 @@ function list_hierarchical_terms() {
 	$taxonomy = 'course_category'; // change this to your taxonomy
 	$terms = wp_get_post_terms( $post->ID, $taxonomy, array( "fields" => "ids" ) );
 	if( $terms ) {
-		echo '<?ul>';
+		echo '<ul class="course-cat">';
 		$terms = trim( implode( ',', (array) $terms ), ' ,' );
 		wp_list_categories( 'title_li=&taxonomy=' . $taxonomy . '&include=' . $terms );
-		echo '<?/ul>';
+		echo '</ul>';
 	}
 }
 

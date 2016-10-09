@@ -2088,6 +2088,34 @@ ul.event-courses ul >li {
 }
 
 /*
+Course Category List
+================================== */
+
+.course-cat {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-weight: bold;
+}
+
+.course-cat li > ul li {
+	list-style: none;
+	font-weight: normal;
+}
+
+.course-cat li > ul li:before {
+	content: "-";
+	color: #fff;
+	float: left;
+	margin-left: -16px;
+	margin-top: 2px;
+	border-left: 1px solid #C5C5C5;
+	border-bottom: 1px solid #C5C5C5;
+	padding-right: 5px;
+	height: 10px
+}
+
+/*
 Articles
 ================================== */
 
