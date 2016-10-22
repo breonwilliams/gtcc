@@ -54,7 +54,7 @@
 				<div class="header-mid-area">
 					<div class="container">
 						<div class="row row-with-vspace site-branding">
-							<div class="col-xs-6 site-title">
+							<div class="col-sm-6 site-title">
 								<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
 									<div class="logo">
 										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
@@ -76,7 +76,7 @@
 									</small>
 								</div>
 							</div>
-							<div class="col-xs-6 page-header-top-right">
+							<div class="col-sm-6 page-header-top-right">
 								<div class="sr-only">
 									<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
 								</div>
