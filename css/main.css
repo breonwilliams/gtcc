@@ -2972,7 +2972,11 @@ Pagination
 	border-radius: 0;
 }
 .pagination li:first-child.disabled a {
-	/* padding-left: 0 !important;*/
+	padding-left: 0 !important;
+}
+
+.dataTables_paginate .pagination li:first-child.disabled a {
+	padding-left: 12px!important;
 }
 .pagination li:first-child a {
 	border-bottom-left-radius: 0;
