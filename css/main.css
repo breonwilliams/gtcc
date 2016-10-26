@@ -2975,6 +2975,13 @@ Pagination
 	background-color: transparent;
 	border-radius: 0;
 }
+.pagination>.active>a:focus, .pagination>.active>span:focus {
+	z-index: 2;
+	color: #fff;
+	cursor: default;
+	background-color: rgb(0, 103, 71);
+	border-color: rgb(0, 103, 71);
+}
 .pagination li:first-child.disabled a {
 	padding-left: 0 !important;
 }
