@@ -2108,16 +2108,20 @@ Course Category List
 	font-weight: normal;
 }
 
-.course-cat li > ul li:before {
-	content: "-";
-	color: #fff;
-	float: left;
-	margin-left: -16px;
-	margin-top: 2px;
-	border-left: 1px solid #C5C5C5;
-	border-bottom: 1px solid #C5C5C5;
-	padding-right: 5px;
-	height: 10px
+@media (min-width: 767px) {
+
+
+	.course-cat li > ul li:before {
+		content: "-";
+		color: #fff;
+		float: left;
+		margin-left: -16px;
+		margin-top: 2px;
+		border-left: 1px solid #C5C5C5;
+		border-bottom: 1px solid #C5C5C5;
+		padding-right: 5px;
+		height: 10px
+	}
 }
 
 /*
