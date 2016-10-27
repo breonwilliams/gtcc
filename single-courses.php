@@ -44,7 +44,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 				<h3 class="panel-title">Course Number</h3>
 			</div>
 			<div class="panel-body">
-				<p>My field value: <?php the_field('course_number'); ?></p>
+				<p><?php the_field('course_number'); ?></p>
 			</div>
 		</div>
 	<?php endif; ?>
@@ -54,7 +54,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 				<h3 class="panel-title">Course Instructor</h3>
 			</div>
 			<div class="panel-body">
-				<p>My field value: <?php the_field('course_instructor'); ?></p>
+				<p><?php the_field('course_instructor'); ?></p>
 			</div>
 		</div>
 	<?php endif; ?>
