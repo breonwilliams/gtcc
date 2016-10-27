@@ -3384,11 +3384,11 @@ Featured Image
 		display: block
 	}
 	.tier-header.t2-header .header-inner-content {
-		background: #eaeff7
+		background: #cfb87c;
 	}
 	.tier-header.t2-header .header-inner-content:before {
 		content: '';
-		background: rgba(234, 239, 247, 0.85)
+		background: rgba(207, 184, 124, 0.9);
 	}
 
 }

@@ -1,6 +1,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<?php if ( has_post_thumbnail() ) : ?>
+
+		<?php else: ?>
+			<h1 class='entry-title page-header'><?php the_title(); ?></h1>
+		<?php endif; ?>
 
 		<div class="entry-meta">
 			<?php bootstrapBasicPostOn(); ?> 

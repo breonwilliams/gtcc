@@ -3,7 +3,7 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 
 		<?php else: ?>
-			<h2 class='entry-title page-header'><?php the_title(); ?></h2>
+			<h1 class='entry-title page-header'><?php the_title(); ?></h1>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
