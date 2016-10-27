@@ -32,90 +32,59 @@
 		
 		
 			<?php do_action('before'); ?>
-			<header role="banner">
-				<div class="header-top-area">
-					<div class="container">
-						<div class="row">
-							<!-- header-top-left start -->
-							<div class="col-xs-6">
-								<div class="header-top-left">
-									<?php dynamic_sidebar('topheader-left'); ?>
-								</div>
+		<header role="banner">
+			<div class="header-top-area">
+				<div class="container">
+					<div class="row">
+						<!-- header-top-left start -->
+						<div class="col-md-10">
+							<div class="header-top-left">
+								<?php dynamic_sidebar('topheader-left'); ?>
 							</div>
-							<!-- header-top-left end -->
-							<!-- header-top-right start -->
-							<div class="col-xs-6">
-								<?php dynamic_sidebar('topheader-right'); ?>
-							</div>
-							<!-- header-top-right end -->
 						</div>
+						<!-- header-top-left end -->
+						<!-- header-top-right start -->
+						<div class="col-md-2">
+							<?php dynamic_sidebar('topheader-right'); ?>
+						</div>
+						<!-- header-top-right end -->
 					</div>
 				</div>
-				<div class="header-mid-area">
-					<div class="container">
-						<div class="row row-with-vspace site-branding">
-							<div class="col-sm-6 site-title">
-								<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
-									<div class="logo">
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+			</div>
+			<div class="header-mid-area">
+				<div class="container">
+					<div class="row row-with-vspace site-branding">
+						<div class="col-sm-6 site-title">
 
-											<img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+							<?php if ( get_theme_mod( 'm1_logo' ) ) : ?>
+								<div class="logo">
+									<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 
-										</a>
-									</div>
-								<?php else : ?>
+										<img src="<?php echo get_theme_mod( 'm1_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 
-									<h1 class="site-title-heading">
-										<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
-									</h1>
-
-								<?php endif; ?>
-								<div class="site-description">
-									<small>
-										<?php bloginfo('description'); ?>
-									</small>
+									</a>
 								</div>
+							<?php else : ?>
+
+								<h1 class="site-title-heading">
+									<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+								</h1>
+
+							<?php endif; ?>
+
+							<div class="site-description">
+								<small>
+									<?php bloginfo('description'); ?>
+								</small>
 							</div>
-							<div class="col-sm-6 page-header-top-right">
-								<div class="sr-only">
-									<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
-								</div>
-								<?php if (is_active_sidebar('header-right')) { ?>
-									<div class="pull-right">
-										<?php dynamic_sidebar('header-right'); ?>
-									</div>
-									<div class="clearfix"></div>
-								<?php } // endif; ?>
+						</div>
+						<div class="col-sm-6 page-header-top-right">
+							<div class="sr-only">
+								<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
 							</div>
-						</div><!--.site-branding-->
-					</div>
-				</div>
-			</header>
-				
-						<nav class="navbar navbar-custom yamm" role="affix">
-							<div class="container">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
-										<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-
-									<?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
-										<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-											<img src="<?php echo get_theme_mod( 'm2_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
-										</a>
-									<?php else : ?>
-
-									<?php endif; ?>
-								</div>
-
-								<div class="collapse navbar-collapse navbar-primary-collapse">
-									<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-left', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
-									<form class="navbar-form navbar-right" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-										<div class="input-group">
-											<input type="search" class="form-control pull-right" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'bootstrap-basic'); ?>">
+							<form class="navbar-form navbar-right" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+								<div class="input-group">
+									<input type="search" class="form-control pull-right" placeholder="<?php echo esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic'); ?>" value="<?php echo esc_attr(get_search_query()); ?>" name="s" title="<?php echo esc_attr_x('Search for:', 'label', 'bootstrap-basic'); ?>">
 						<span class="input-group-btn">
 							<button type="reset" class="btn btn-red">
 								<span class="glyphicon glyphicon-remove">
@@ -128,11 +97,48 @@
 								</span>
 							</button>
 						</span>
-										</div>
-									</form>
-								</div><!--.navbar-collapse-->
-							</div>
-						</nav>
+								</div>
+							</form>
+							<div class="clearfix"></div>
+							<?php if (is_active_sidebar('header-right')) { ?>
+								<div class="pull-right">
+									<?php dynamic_sidebar('header-right'); ?>
+								</div>
+								<div class="clearfix"></div>
+							<?php } // endif; ?>
+						</div>
+					</div><!--.site-branding-->
+				</div>
+			</div>
+			<!--.site-nav-->
+			<nav class="navbar navbar-custom yamm" role="affix">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+							<span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+						<?php if ( get_theme_mod( 'm2_logo' ) ) : ?>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="navbar-brand" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+								<img src="<?php echo get_theme_mod( 'm2_logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+							</a>
+						<?php else : ?>
+
+						<?php endif; ?>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-primary-collapse">
+						<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav navbar-left', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
+
+					</div><!--.navbar-collapse-->
+				</div>
+			</nav>
+		</header>
+				
+
 
 
 		<?php full_above_content_area(); ?>
