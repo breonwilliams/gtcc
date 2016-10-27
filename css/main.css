@@ -3089,6 +3089,322 @@ Full Width Sections
 	color: #fff !important;
 }
 
+/*
+Featured Image
+================================== */
+
+.tier-header {
+	position: relative
+}
+
+.tier-header .img-container {
+	position: relative;
+	height: 280px;
+	overflow: hidden;
+	width: 100%
+}
+
+.tier-header .img-container img {
+	width: 100%;
+	position: absolute;
+	top: -9999px;
+	bottom: -9999px;
+	left: -9999px;
+	right: -9999px;
+	margin: auto;
+	min-width: 100%;
+	min-height: 100%
+}
+
+.tier-header .img-container.background-image {
+	width: 100%;
+	height: 350px;
+	background: center center no-repeat;
+	background-size: 100%;
+	display: block
+}
+
+@media (max-width:767px) {
+	.tier-header .img-container.background-image {
+		height: 121px;
+		background: center center no-repeat;
+		background-size: 100%
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.tier-header .img-container.background-image {
+		height: 233px;
+		background: center center no-repeat;
+		background-size: 100%
+	}
+}
+
+.tier-header .img-container.background-image1 {
+	width: 100%;
+	height: 350px;
+	background-size: 100%;
+	display: block
+}
+
+@media (max-width:767px) {
+	.tier-header .img-container.background-image1 {
+		height: 121px;
+		background-size: 100%
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.tier-header .img-container.background-image1 {
+		height: 233px;
+		background-size: 100%
+	}
+}
+
+.tier-header .img-container.background-image1-compressed {
+	width: 100%;
+	height: 350px;
+	background-size: 100%;
+	display: block
+}
+
+.tier-header .img-container.background-image2 {
+	width: 100%;
+	height: 350px;
+	background-size: 100%;
+	display: block;
+	margin-top: 120px
+}
+
+.tier-header .img-container.background-image2-compressed {
+	width: 100%;
+	height: 350px;
+	background-size: 100%;
+	display: block
+}
+
+.tier-header .img-container.background-image3 {
+	width: 100%;
+	height: 350px;
+	background-size: 100%;
+	display: block;
+	margin-top: 120px
+}
+
+.tier-header .img-container.background-image3-compressed {
+	width: 100%;
+	height: 350px;
+	background-size: 100%;
+	display: block
+}
+
+.tier-header.t2-header .img-container {
+	height: 283px;
+	width: 100%;
+	background: center center no-repeat;
+	background-size: 100%;
+	display: block
+}
+
+.tier-header.t2-header:after {
+	background-color: #cfb87c;
+}
+
+.tier-header.t2-header .header-inner-content {
+	background: rgba(207, 184, 124, 0.9);
+}
+
+.tier-header.t2-header .header-inner-content h1 {
+	color: #fff!important;
+	font-size: 50px;
+}
+
+.tier-header:after {
+	content: '';
+	background-color: #cfb87c;
+	height: 10px;
+	width: 51%;
+	position: absolute;
+	left: 0
+}
+
+.tier-header .header-inner-content {
+	position: absolute;
+	z-index: 2;
+	width: 51%;
+	bottom: 0;
+	left: 0;
+	font-weight: normal;
+	background: rgba(17, 46, 78, 0.8);
+	padding: 20px
+}
+
+.tier-header .header-inner-content>.contained {
+	max-width: 466px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: right
+}
+
+.tier-header .header-inner-content h1 {
+	color: #fff;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.tier-header .header-inner-content p {
+	font-size: 18px;
+	color: #fff
+}
+
+.tier-header .header-inner-content.large-text h1 {
+	font-size: 35px
+}
+
+.tier-header hr {
+	border-top: 1px solid #77a8e0
+}
+
+.tier-header p a {
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+	text-transform: uppercase
+}
+
+.tier-header p a:after {
+	display: inline-block;
+	font: normal normal normal 14px/1 fontello;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: '\e804';
+	font-size: 16px;
+	color: #7ba6d6;
+	padding-left: 10px;
+	right: 0;
+	position: absolute
+}
+
+@media (max-width:767px) {
+	.tier-header .img-container {
+		height: 121px
+	}
+	.tier-header img {
+		min-height: 150px
+	}
+	.tier-header:after {
+		content: none
+	}
+	.tier-header .header-inner-content {
+		width: 100%;
+		padding-left: 10px;
+		background: #0e4c92
+	}
+	.tier-header .header-inner-content>.contained {
+		float: left;
+		max-width: 100%;
+		width: 100%
+	}
+	.tier-header .header-inner-content:before {
+		content: '';
+		background: rgba(14, 76, 146, 0.8);
+		height: 20px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		margin-top: -40px
+	}
+	.tier-header .header-inner-content h1 {
+		font-size: 26px;
+		margin: 0
+	}
+	.tier-header .header-inner-content p {
+		display: none
+	}
+	.tier-header .header-inner-content.large-text h1 {
+		font-size: 22px
+	}
+	.tier-header.t2-header .img-container {
+		height: 98px !important;
+		width: 100%;
+		background-size: 100%;
+		display: block
+	}
+	.tier-header.t2-header .header-inner-content {
+		background: #cfb87c;
+	}
+	.tier-header.t2-header .header-inner-content:before {
+		content: '';
+		background: rgba(207, 184, 124, 0.9)
+	}
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.tier-header .img-container {
+		height: 233px
+	}
+	.tier-header:after {
+		content: none
+	}
+	.tier-header .header-inner-content {
+		width: 100%;
+		padding-left: 10px;
+		background: #0e4c92
+	}
+	.tier-header .header-inner-content>.contained {
+		float: left;
+		max-width: 100%;
+		width: 100%
+	}
+	.tier-header .header-inner-content:before {
+		content: '';
+		background: rgba(14, 76, 146, 0.8);
+		height: 20px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		margin-top: -40px
+	}
+	.tier-header .header-inner-content h1 {
+		font-size: 50px;
+		margin: 0
+	}
+	.tier-header .header-inner-content p {
+		display: none
+	}
+
+	.tier-header.t2-header .img-container {
+		height: 188px;
+		width: 100%;
+		background-size: 100%;
+		display: block
+	}
+	.tier-header.t2-header .header-inner-content {
+		background: #eaeff7
+	}
+	.tier-header.t2-header .header-inner-content:before {
+		content: '';
+		background: rgba(234, 239, 247, 0.85)
+	}
+
+}
+
+@media (min-width:1169px) {
+	.tier-header .img-container {
+		height: 357px
+	}
+	.tier-header .img-container.height-test {
+		height: 327px
+	}
+	.tier-header.t2-header .img-container {
+		height: 283px
+	}
+
+}
 
 /*
 Plan Section

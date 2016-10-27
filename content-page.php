@@ -1,6 +1,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h2 class="entry-title page-header"><?php the_title(); ?></h2>
+		<?php if ( has_post_thumbnail() ) : ?>
+
+		<?php else: ?>
+			<h2 class='entry-title page-header'><?php the_title(); ?></h2>
+		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

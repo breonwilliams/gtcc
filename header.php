@@ -138,6 +138,28 @@
 
 
 <?php full_above_content_area(); ?>
+
+<?php
+function tier_header(){
+    global $post;
+
+    $parent_title = get_the_title( $post->post_parent );
+
+    if (is_page() || is_single()){
+        $slider_content = wp_kses_post(get_post_meta($post->ID, 'meta_box_slider_embed', true));
+        echo do_shortcode($slider_content);
+
+        if(has_post_thumbnail()){
+            $imgID = get_post_thumbnail_id($post->ID); //get the id of the featured image
+            $featuredImage = wp_get_attachment_image_src($imgID, 'full' );//get the url of the featured image (returns an array)
+            $imgURL = $featuredImage[0]; //get the url of the image out of the array
+            echo"<div class='tier-header t2-header'><div class='img-container background-image' style='background-image: url( $imgURL );'><div class='header-inner-content'><div class='contained'><h1>$parent_title</h1></div></div></div></div>";
+        };
+    }
+}
+?>
+
+<?php tier_header(); ?>
 <?php the_breadcrumb(); ?>
 <div id="main-content" class="theme-showcase pad-40" role="main">
 	<div class="container ">
