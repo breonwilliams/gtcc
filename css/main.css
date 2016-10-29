@@ -466,6 +466,14 @@ Thumbnail
 	color: #191919;
 }
 
+.thumbnail h3 a:after {
+	content: '\f178';
+	width: 1.3em;
+	display: inline-block;
+	font-family: FontAwesome;
+	padding-left: 12px;
+}
+
 .thumbnail h3 a:hover {
 	color: rgb(0, 103, 71);
 }
