@@ -58,6 +58,26 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 			</div>
 		</div>
 	<?php endif; ?>
+	<?php if( get_field('course_date') ): ?>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Course Date</h3>
+			</div>
+			<div class="panel-body">
+				<p><?php the_field('course_date'); ?></p>
+			</div>
+		</div>
+	<?php endif; ?>
+	<?php if( get_field('course_location') ): ?>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Course Location</h3>
+			</div>
+			<div class="panel-body">
+				<p><?php the_field('course_location'); ?></p>
+			</div>
+		</div>
+	<?php endif; ?>
 
 </div>
 <?php get_footer(); ?>
