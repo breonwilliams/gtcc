@@ -38,6 +38,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 					</main>
 				</div>
 <div class="col-md-4">
+
 	<?php if( get_field('course_number') ): ?>
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -78,6 +79,14 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 			</div>
 		</div>
 	<?php endif; ?>
+
+	<?php
+	$gtcc_register = get_theme_mod( 'registration_textbox', '' );
+	if($gtcc_register) { ?>
+		<a href="<?php echo $gtcc_register; ?>" class="btn btn-yellow btn-lg btn-block marginbot-15" target="_blank">Register <i class="fa fa-chevron-right"></i></a>
+	<?php } else { ?>
+
+	<?php } ?>
 
 </div>
 <?php get_footer(); ?>

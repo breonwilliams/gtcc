@@ -28,7 +28,7 @@ function copyright_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'copyright_textbox',
 		array(
-			'default' => 'FunctionalMovement.com',
+			'default' => 'Continuing Education',
 		)
 	);
 
@@ -44,6 +44,39 @@ function copyright_customizer( $wp_customize ) {
 }
 
 add_action( 'customize_register', 'copyright_customizer' );
+
+
+
+function registration_customizer( $wp_customize ) {
+	$wp_customize->add_section(
+		'registration_section',
+		array(
+			'title' => 'Registration Link',
+			'description' => 'This will add the registration link to all courses.',
+			'priority' => 36,
+		)
+	);
+
+	$wp_customize->add_setting(
+		'registration_textbox',
+		array(
+			'default' => '#',
+		)
+	);
+
+	$wp_customize->add_control(
+		'registration_textbox',
+		array(
+			'label' => 'URL',
+			'section' => 'registration_section',
+			'type' => 'text',
+		)
+	);
+
+}
+
+add_action( 'customize_register', 'registration_customizer' );
+
 
 function m2_customize_register( $wp_customize ) {
     $wp_customize->add_setting( 'm2_logo' ); // Add setting for logo uploader
