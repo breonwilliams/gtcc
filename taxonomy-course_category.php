@@ -18,8 +18,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						<?php if (have_posts()) { ?>
 
 							<h1><?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; ?></h1>
-						<div class="table-responsive">
-							<table class="table table-1 table-striped">
+							<table id="coursesTable" class="table table-1 table-striped dt-responsive" cellspacing="0" width="100%">
 								<thead>
 								<tr>
 									<th class="col-md-3">Course Name</th>
@@ -50,7 +49,6 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						<?php } //endif; ?>
 								</tbody>
 							</table>
-						</div>
 						<?php bootstrapBasicPagination(); ?>
 					</main>
 				</div>
