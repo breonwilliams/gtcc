@@ -44,7 +44,7 @@
 						</div>
 						<!-- header-top-left end -->
 						<!-- header-top-right start -->
-						<div class="col-sm-10 col-xs-6">
+						<div class="col-sm-2 col-xs-6">
 							<?php dynamic_sidebar('topheader-right'); ?>
 						</div>
 						<!-- header-top-right end -->
