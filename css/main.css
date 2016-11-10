@@ -1440,6 +1440,35 @@ form.navbar-form[role="search"] button[type="submit"] {
 }
 
 /*
+Course sub category links
+=========================== */
+ul.tax-subcat li a {
+	color: rgb(0, 103, 71);
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-transition: color 0.15s ease-in-out 0s;
+	-moz-transition: color 0.15s ease-in-out 0s;
+	-o-transition: color 0.15s ease-in-out 0s;
+	transition: color 0.15s ease-in-out 0s;
+	border: 2px solid rgb(0, 103, 71);
+	font-family: 'Montserrat' !important;
+	padding: 4px 8px;
+	font-size: 10px;
+}
+
+ul.tax-subcat {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.tax-subcat li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 10px 10px 0;
+}
+
+/*
 Color
 =========================== */
 a,

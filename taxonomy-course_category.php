@@ -18,6 +18,18 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						<?php if (have_posts()) { ?>
 
 							<h1><?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; ?></h1>
+						<ul class="tax-subcat">
+							<?php
+							$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+							if ($term->parent == 0) {
+								wp_list_categories('taxonomy=course_category&depth=1&show_count=0
+&title_li=&child_of=' . $term->term_id);
+							} else {
+								wp_list_categories('taxonomy=course_category&show_count=0
+&title_li=&child_of=' . $term->parent);
+							}
+							?>
+						</ul>
 							<table id="coursesTable" class="table table-1 table-striped dt-responsive" cellspacing="0" width="100%">
 								<thead>
 								<tr>
