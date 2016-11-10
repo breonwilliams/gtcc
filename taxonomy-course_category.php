@@ -5,31 +5,26 @@
  * @package bootstrap-basic
  */
 
-get_header(); 
-
-/**
- * determine main column size from actived sidebar
- */
-$main_column_size = bootstrapBasicGetMainColumnSize();
-?> 
-<?php get_sidebar('left'); ?> 
-				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
+get_header(); ?>
+				<div class="col-md-12 content-area" id="main-column">
 					<main id="main" class="site-main" role="main">
 						<?php if (have_posts()) { ?>
 
 							<h1><?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; ?></h1>
-						<ul class="tax-subcat">
-							<?php
-							$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-							if ($term->parent == 0) {
-								wp_list_categories('taxonomy=course_category&depth=1&show_count=0
+						<div class="marginbot-15">
+							<ul class="tax-subcat">
+								<?php
+								$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+								if ($term->parent == 0) {
+									wp_list_categories('taxonomy=course_category&depth=1&show_count=0
 &title_li=&child_of=' . $term->term_id);
-							} else {
-								wp_list_categories('taxonomy=course_category&show_count=0
+								} else {
+									wp_list_categories('taxonomy=course_category&show_count=0
 &title_li=&child_of=' . $term->parent);
-							}
-							?>
-						</ul>
+								}
+								?>
+							</ul>
+						</div>
 							<table id="coursesTable" class="table table-1 table-striped dt-responsive" cellspacing="0" width="100%">
 								<thead>
 								<tr>
@@ -64,5 +59,4 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 						<?php bootstrapBasicPagination(); ?>
 					</main>
 				</div>
-<?php get_sidebar('right'); ?> 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>
