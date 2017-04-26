@@ -1,2 +1,2 @@
-# fms-theme
-Functional Movement Wordpress Theme
+# gtcc-theme
+GTCC Wordpress Theme
