@@ -158,14 +158,12 @@ if (!function_exists('bootstrapBasicFullPageSearchForm')) {
 	 */
 	function bootstrapBasicFullPageSearchForm() 
 	{
-		$output = '<form class="form-horizontal" method="get" action="' . esc_url(home_url('/')) . '" role="form">';
-		$output .= '<div class="form-group">';
-		$output .= '<div class="col-xs-10">';
-		$output .= '<input type="text" name="s" value="' . esc_attr(get_search_query()) . '" placeholder="' . esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic') . '" title="' . esc_attr_x('Search &hellip;', 'label', 'bootstrap-basic') . '" class="form-control" />';
-		$output .= '</div>';
-		$output .= '<div class="col-xs-2">';
+		$output = '<form class="search-form form" method="get" action="' . esc_url(home_url('/')) . '" role="form">';
+		$output .= '<div class="input-group">';
+		$output .= '<input type="text" name="s" value="' . esc_attr(get_search_query()) . '" placeholder="' . esc_attr_x('Search &hellip;', 'placeholder', 'bootstrap-basic') . '" title="' . esc_attr_x('Search &hellip;', 'label', 'bootstrap-basic') . '" id="form-search-input" class="form-control" />';
+		$output .= '<span class="input-group-btn">';
 		$output .= '<button type="submit" class="btn btn-default">' . __('Search', 'bootstrap-basic') . '</button>';
-		$output .= '</div>';
+		$output .= '</span>';
 		$output .= '</div>';
 		$output .= '</form>';
 

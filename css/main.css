@@ -3270,6 +3270,40 @@ Full Width Sections
 }
 
 /*
+Boxed Layout
+================================== */
+
+.boxed-header, .boxed-container {
+	background: #fff;
+}
+
+.boxed-container {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.theme-showcase {
+	background: #FFFFFF;
+}
+
+.theme-showcase.showcase-boxed {
+	background: transparent;
+}
+
+@media (max-width: 768px) {
+	.theme-showcase.showcase-boxed.pad-40 {
+		padding: 0!important;
+	}
+}
+@media (min-width: 767px) {
+	.container.boxed-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+/*
 Featured Image
 ================================== */
 

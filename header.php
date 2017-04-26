@@ -141,7 +141,6 @@
 
 
 
-<?php full_above_content_area(); ?>
 
 <?php
 function tier_header(){
